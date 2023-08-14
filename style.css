@@ -1,0 +1,221 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+MAIN COLOR: #087f5b
+GREY COLOR: #343a40
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Global settings */
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 80px;
+  column-gap: 80px;
+  margin-bottom: 80px;
+  align-items: center;
+}
+
+.grid-3-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+header,
+section {
+  margin-bottom: 96px;
+}
+
+/* Individual setting */
+
+img {
+  width: 100%;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+/* header part */
+
+.main-heading {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.header-img {
+  width: 500px;
+}
+
+.header-text {
+  line-height: 1.9;
+  letter-spacing: 2px;
+}
+
+/* feature part */
+
+.feature-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.feature-text {
+  line-height: 1.7;
+}
+
+.feature-icon {
+  width: 32px;
+  color: #087f5b;
+  margin-bottom: 16px;
+}
+
+/* testimonial box */
+
+.testimonial {
+  background-color: #087f5b;
+  padding: 40px;
+  color: #fff;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.testimonial img {
+  width: 320px;
+  height: 250px;
+}
+
+.testimonial-box {
+  grid-column: 2 / 4;
+}
+
+.testimonial-heading {
+  margin-bottom: 24px;
+}
+
+.testimonial-text {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.testimonial-author {
+  color: #c3fae8;
+}
+
+/* Bike card */
+
+/* Spacing 
+2 / 4 / 8 / 12 / 16 / 24
+ */
+
+.bike {
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.bike img {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.bike-box {
+  padding: 32px;
+}
+
+.bike-details {
+  list-style: none;
+  margin-bottom: 48px;
+}
+
+.bike-box h3 {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.bike-details li {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bike-details li:last-child {
+  margin-bottom: 0px;
+}
+
+.bike-icon {
+  width: 24px;
+  height: 24px;
+  color: #087f5b;
+}
+
+.bike-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.bike-price a {
+  text-decoration: none;
+  background-color: #087f5b;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+/* footer */
+
+footer {
+  font-size: 14px;
+  color: #495057;
+  margin-bottom: 44px;
+}
